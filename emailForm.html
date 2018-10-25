@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="emailSender.php">
+    <input type="text" placeholder="email" name="email" required>
+    <input type="password" placeholder="password" name="password" required><br>
+    <input type="text" name="smtp_url" placeholder="Adress SMTP (np. smtp.xyz.pl)">
+    <select name="sec">
+        <option value="tls">TLS</option>
+        <option value="ssl">SSL</option>
+    </select>
+    <input type="number" placeholder="port" style="width: 50px;" max="999" min="100" name="port" required><br>
+    <input type="text" placeholder="Adress odbiorcy" name="emailTo"><br>
+    <input type="text" placeholder="Subject" style="width: 30%;" name="subject" required><br>
+    <textarea style="width: 30%; height: 300px;" placeholder="Tresc wiadomosci" name="email_content" required></textarea><br>
+    <input type="submit" value="Wyślij">
+</form>
+
+</body>
+</html>
